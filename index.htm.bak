@@ -11,10 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/wowslider.css">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
 <body>
 
     <header>
@@ -129,10 +132,10 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="submenu">
+                        <li>
                             <a href="">Yeniliklər</a>
                         </li>
-                        <li class="submenu">
+                        <li>
                             <a href="">Məlumatlar</a>
                         </li>
                         <li class="submenu">
@@ -148,7 +151,7 @@
                                 <li class="dropdown_menu_item"><a href="">Vakansiyalar</a></li>
                             </ul>
                         </li>
-                        <li class="submenu">
+                        <li>
                             <a href="">Əlaqə</a>
                         </li>
                         <li id="own_cabinet">
@@ -378,38 +381,15 @@
     </header>
 
     <main>
-        	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-    <section id="wowslider">
-      <div style="height: 666px;" id="wowslider-container0">
-        <div class="ws_images">
-          <ul>
-          <li><img src="/assets/img/slider/slider1.jpg" alt="slider1" title="slider1" id="wows0_0"/></li>
-          <li><img src="/assets/img/slider/slider2.jpg" alt="jquery carousel slider" title="slider2" id="wows0_1"/></li>
-          <li><img src="/assets/img/slider/slider3.jpg" alt="slider3" title="slider3" id="wows0_2"/></li>
-          </ul>
-        </div>
-        <div class="ws_controls"><div class="ws_bullets">
-          <div>
-              <a href="javascript:void(0)" class="ws_selbull"><span>1</span></a>
-              <a href="javascript:void(0)" class=""><span>2</span></a>
-              <a href="javascript:void(0)" class=""><span>3</span></a>
-          <!-- <div class="ws_bulframe" style="display: none; left: 4px; margin-top: 0px; margin-bottom: 0px; opacity: 0;"><div><div style="width: 400%; left: 0px;"><img src="/img/autumn-tree1.jpeg" alt="item1"><img src="/img/slide22.jpg" alt="item2"><img src="/img/slide33.jpg" alt="item3"></div></div><span></span></div></div> -->
-          <div class="bullet-progress"><div class="ws_bulframe" style="display: none; left: 4px; margin-top: 0px; margin-bottom: 0px; opacity: 0;"><div><div style="width: 400%; left: 0px;"><img src="/img/autumn-tree1.jpeg" alt="item1"><img src="/img/slide22.jpg" alt="item2"><img src="/img/slide33.jpg" alt="item3"></div></div><span></span></div></div>
-      </div></div>
-      </div>
-    </section>
-	
-  	
-  </main>
-
+        
+    </main>
     
     <footer></footer>
 
     <script src="/assets/js/bootstrap.js"></script>
     <script src="/assets/js/fontawesome.js"></script>
     <script src="/assets/js/jquery-3.6.3.min.js"></script>
-    <script type="text/javascript" src="/assets/js/wowslider.js"></script>
-    <script type="text/javascript" src="/assets/js/wowscript.js"></script>
+    <script src="/assets/js/wowslider.js"></script>
     <script src="/assets/js/script.js"></script>
 </body>
 </html>
