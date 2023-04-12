@@ -176,98 +176,87 @@ header {
 /* slider */
 #wowslider {
     position: relative;
-    /* z-index: -1; */
     top: -150px;
 }
-main #wowslider-container0,#wowslider-container0 .ws_images {
+main #wowslider-container0,
+#wowslider-container0 .ws_images {
     height: 100vh;
-    /* width: 100%; */
 }
 #wowslider-container0 img {
-    /* margin-top: 0 !important; */
-    /* margin-left: 0 !important; */
-    /* width: 100% !important; */
     height: 100% !important;
     object-fit: cover;
     filter: brightness(0.8);
 }
 #wowslider-container0 .ws_bullets {
     left: 0;
+    bottom: -10px;
     height: 100%;
-  }
-  
-  #wowslider-container0 .ws_bullets div {
+}
+#wowslider-container0 .ws_bullets div {
     left: 0;
     height: 100%;
-  }
-  
-  #wowslider-container0 .ws_bullets div a {
+}
+#wowslider-container0 .ws_bullets div a {
     position: absolute;
     top: 0;
     left: 0;
-    display: -ms-flexbox;
-    display: -webkit-box;
     display: flex;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-            align-items: center;
-    -ms-flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 60px;
     height: 100%;
     opacity: 0;
     padding-bottom: 60px;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  #wowslider-container0 .ws_bullets div a.ws_selbull {
+}
+#wowslider-container0 .ws_bullets div a.ws_selbull {
     opacity: 1;
-  }
-  
-  #wowslider-container0 .ws_bullets div a span {
+}
+#wowslider-container0 .ws_bullets div a span {
     display: block;
     font-size: 13px;
     color: #fff;
-  }
-  
-  #wowslider-container0 .ws_bullets div .ws_bulframe {
+}
+#wowslider-container0 .ws_bullets div .ws_bulframe {
     display: none !important;
-  }
-  
-  #wowslider-container0 .ws_bullets .bullet-progress {
+}
+#wowslider-container0 .ws_bullets .bullet-progress {
     position: absolute;
     bottom: 0;
-    left: 60px;
+    left: 59px;
     width: 1px;
     height: 0;
-    background-color: #c2a73d;
-    -webkit-animation: progress 6s infinite ease-in-out;
-            animation: progress 6s infinite ease-in-out;
-  }
-  
-  @-webkit-keyframes progress {
+    background-color: #EA1D24;
+    animation:  progress 4s infinite ease;
+}
+
+@-webkit-keyframes progress {
     100% {
-      height: 100%;
+        height: 100%;
     }
     0% {
-      height: 0;
+        height: 0;
     }
-  }
-  
-  @keyframes progress {
+}
+
+@keyframes progress {
     100% {
-      height: 100%;
+        height: 100%;
     }
     0% {
-      height: 0;
+        height: 0;
     }
-  }
-  
+}
+#wowslider-container0 .ws_bullets a {
+    border: 0px;
+    border-radius: unset;
+    margin: 0px;
+}
+#wowslider-container0 .ws_bullets a.ws_selbull {
+    border: 0px solid #fff;
+    border-right: 1px solid #fff;
+}
 /* ------------------- */
 @media only screen and (max-width: 768px) {
     #mobile_nav,
@@ -468,7 +457,6 @@ main #wowslider-container0,#wowslider-container0 .ws_images {
     }
     .menu-wrapper.opened .menu-wrap .menu-open {
         opacity: 0;
-        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     .menu-wrapper .menu-wrap .menu-close {
@@ -484,6 +472,20 @@ main #wowslider-container0,#wowslider-container0 .ws_images {
     }
     #collapseSix .accordion-button::after {
         display: none;
+    }
+    #wowslider-container0 .ws_controls, 
+    #wowslider-container0 .ws_bullets, 
+    #wowslider-container0 .ws_thumbs {
+        display: block;
+    }
+    #wowslider-container0 .ws_bullets div a {
+        width: 30px;
+    }
+    #wowslider-container0 .ws_bullets .bullet-progress {
+        left: 29px;
+    }
+    #mobile_nav {
+        padding: 30px 10px 30px 30px;
     }
   }
 
