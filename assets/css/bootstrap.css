@@ -2808,7 +2808,7 @@ textarea.form-control-lg {
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: #212529;
+  /* --bs-btn-color: #212529; */
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
@@ -2863,11 +2863,11 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+/* .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
-}
+} */
 .btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
@@ -4199,7 +4199,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #fff;
+  /* --bs-card-bg: #fff; */
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -4210,8 +4210,8 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: var(--bs-card-bg);
   background-clip: border-box;
-  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border-radius: var(--bs-card-border-radius);
+  /* border: var(--bs-card-border-width) solid var(--bs-card-border-color); */
+  /* border-radius: var(--bs-card-border-radius); */
 }
 .card > hr {
   margin-right: 0;
@@ -4263,8 +4263,8 @@ textarea.form-control-lg {
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
   margin-bottom: 0;
   color: var(--bs-card-cap-color);
-  background-color: var(--bs-card-cap-bg);
-  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  /* background-color: var(--bs-card-cap-bg); */
+  /* border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color); */
 }
 .card-header:first-child {
   border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
@@ -4398,9 +4398,9 @@ textarea.form-control-lg {
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
   font-size: 1rem;
-  color: var(--bs-accordion-btn-color);
+  /* color: var(--bs-accordion-btn-color); */
   text-align: left;
-  background-color: var(--bs-accordion-btn-bg);
+  /* background-color: var(--bs-accordion-btn-bg); */
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -4411,13 +4411,13 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.accordion-button:not(.collapsed) {
+/* .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
   background-color: var(--bs-accordion-active-bg);
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
-}
+} */
 .accordion-button:not(.collapsed)::after {
-  background-image: var(--bs-accordion-btn-active-icon);
+  /* background-image: var(--bs-accordion-btn-active-icon); */
   transform: var(--bs-accordion-btn-icon-transform);
 }
 .accordion-button::after {
@@ -4441,9 +4441,9 @@ textarea.form-control-lg {
 }
 .accordion-button:focus {
   z-index: 3;
-  border-color: var(--bs-accordion-btn-focus-border-color);
+  /* border-color: var(--bs-accordion-btn-focus-border-color); */
   outline: 0;
-  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+  /* box-shadow: var(--bs-accordion-btn-focus-box-shadow); */
 }
 
 .accordion-header {
@@ -4817,8 +4817,8 @@ textarea.form-control-lg {
 }
 
 .list-group {
-  --bs-list-group-color: #212529;
-  --bs-list-group-bg: #fff;
+  /* --bs-list-group-color: #212529; */
+  /* --bs-list-group-bg: #fff; */
   --bs-list-group-border-color: rgba(0, 0, 0, 0.125);
   --bs-list-group-border-width: 1px;
   --bs-list-group-border-radius: 0.375rem;
@@ -4869,20 +4869,20 @@ textarea.form-control-lg {
 .list-group-item {
   position: relative;
   display: block;
-  padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+  /* padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x); */
   color: var(--bs-list-group-color);
   text-decoration: none;
   background-color: var(--bs-list-group-bg);
   border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
 }
-.list-group-item:first-child {
+/* .list-group-item:first-child {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
-}
-.list-group-item:last-child {
+} */
+/* .list-group-item:last-child {
   border-bottom-right-radius: inherit;
   border-bottom-left-radius: inherit;
-}
+} */
 .list-group-item.disabled, .list-group-item:disabled {
   color: var(--bs-list-group-disabled-color);
   pointer-events: none;
