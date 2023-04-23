@@ -8,12 +8,13 @@
   <title>Connect.az</title>
   <link rel="stylesheet" href="/assets/css/bootstrap.css">
   <link rel="stylesheet" href="/assets/fonts/fonts.css">
-  <!-- <link rel="stylesheet" href="/assets/css/all.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/wowslider.css">
+  <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/assets/css/slick.css">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -32,7 +33,7 @@
             <li><a href="">Şirkət</a></li>
             <li><a href="">Əlaqə</a></li>
           </ul>
-          <ul id="menu_languages" class="col-4 col-lg-2">
+          <ul class="menu_languages col-4 col-lg-2">
             <li><a href="">Aze</a></li>
             <li><a href="">Eng</a></li>
             <li><a href="">Rus</a></li>
@@ -146,9 +147,13 @@
                 </li>
                 <li class="dropdown_menu_item">
                   <a href="">Hədəf və məqsədimiz</a>
-
                 </li>
-                <li class="dropdown_menu_item"><a href="">Vakansiyalar</a></li>
+                <li class="dropdown_menu_item">
+                  <a href="">Direktorun müraciəti</a>
+                </li>
+                <li class="dropdown_menu_item">
+                  <a href="">Vakansiyalar</a>
+                </li>
               </ul>
             </li>
             <li class="submenu">
@@ -193,7 +198,7 @@
 
     <section id="mob_menu">
       <div class="accordion " id="multiAccordion">
-        <div class="card">
+        <div class="accordion_card">
           <div class="card-header" id="cardHeadingOne">
             <h2 class="mb-0">
               <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -237,7 +242,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="accordion_card">
           <div class="card-header" id="cardHeadingTwo">
             <h2 class="mb-0">
               <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
@@ -296,7 +301,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="accordion_card">
           <div class="card-header" id="cardHeadingThree">
             <h2 class="mb-0">
               <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
@@ -306,7 +311,7 @@
             </h2>
           </div>
         </div>
-        <div class="card">
+        <div class="accordion_card">
           <div class="card-header" id="cardHeadingFour">
             <h2 class="mb-0">
               <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour "
@@ -316,7 +321,7 @@
             </h2>
           </div>
         </div>
-        <div class="card">
+        <div class="accordion_card">
           <div class="card-header" id="cardHeadingSix">
             <h2 class="mb-0">
               <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
@@ -342,7 +347,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="accordion_card">
           <div class="card-header" id="cardHeadingSeven">
             <h2 class="mb-0">
               <a href="#" class="btn" type="button">
@@ -388,15 +393,49 @@
   </header>
 
   <main>
-    <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
     <section id="wowslider">
       <div id="wowslider-container0">
         <div class="ws_images">
           <ul>
-            <li><img src="/assets/img/slider/slider1.jpg" alt="slider1" title="slider1" id="wows0_0" /></li>
-            <li><img src="/assets/img/slider/slider2.jpg" alt="jquery carousel slider" title="slider2" id="wows0_1" />
+            <li>
+              <img src="/assets/img/slider/slider1.jpg" alt="slider1" title="slider1" id="wows0_0" />
+              <div class="slide-title-wrap">
+                <div class="slide-title">Lorem ipsum dolor sit amet lorem</div>
+                <a href="/products/" class="more-btn">
+                    <div class="more-btn-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <span>Ətraflı</span>        
+                </a>
+            </div>
             </li>
-            <li><img src="/assets/img/slider/slider3.jpg" alt="slider3" title="slider3" id="wows0_2" /></li>
+
+            <li>
+              <img src="/assets/img/slider/slider2.jpg" alt="jquery carousel slider" title="slider2" id="wows0_1" />
+              <div class="slide-title-wrap">
+                <div class="slide-title">Lorem ipsum dolor sit amet lorem</div>
+                <a href="/products/" class="more-btn">
+                    <div class="more-btn-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <span>Ətraflı</span>        
+                </a>
+            </div>
+            </li>
+
+            <li>
+              <img src="/assets/img/slider/slider3.jpg" alt="slider3" title="slider3" id="wows0_2" />
+              <div class="slide-title-wrap">
+                <div class="slide-title">Lorem ipsum dolor sit amet lorem</div>
+                <a href="/products/" class="more-btn">
+                    <div class="more-btn-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <span>Ətraflı</span>        
+                </a>
+            </div>
+            </li>
+            
           </ul>
         </div>
         <div class="ws_controls">
@@ -405,37 +444,806 @@
               <a href="javascript:void(0)" class="ws_selbull"><span>1</span></a>
               <a href="javascript:void(0)" class=""><span>2</span></a>
               <a href="javascript:void(0)" class=""><span>3</span></a>
-              <!-- <div class="ws_bulframe" style="display: none; left: 4px; margin-top: 0px; margin-bottom: 0px; opacity: 0;"><div><div style="width: 400%; left: 0px;"><img src="/img/autumn-tree1.jpeg" alt="item1"><img src="/img/slide22.jpg" alt="item2"><img src="/img/slide33.jpg" alt="item3"></div></div><span></span></div></div> -->
               <div class="bullet-progress">
-                <div class="ws_bulframe"
-                  style="display: none; left: 4px; margin-top: 0px; margin-bottom: 0px; opacity: 0;">
-                  <div>
-                    <div style="width: 400%; left: 0px;"><img src="/img/autumn-tree1.jpeg" alt="item1"><img
-                        src="/img/slide22.jpg" alt="item2"><img src="/img/slide33.jpg" alt="item3"></div>
-                  </div><span></span>
-                </div>
+                <div class="ws_bulframe"></div>
               </div>
             </div>
           </div>
         </div>
     </section>
 
-    <section>
+    <section id="recipes">
       <div class="container">
-        <h2>Tariflər</h2>
+        <div class="row">
+          <div class="col-md-6 title">
+            <h2>Tariflər</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, consequuntur?</p>
+          </div>
+          <div class="col-md-6">
+            <div class="blog-titles">
+              <div class="blog-title active" data-target="blog1">ADSL</div>
+              <div class="blog-title" data-target="blog2">Fiber-optik</div>
+              <div class="blog-title" data-target="blog3">Efir-kabel</div>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+
+          <div class="card-container blog1 active">
+            <div class="card">
+              <div class="card-top">
+                <div class="card-title">
+                  <h3>ADSL</h3>
+                  <span class="packet_sort">Fərdi</span>
+                </div>
+                <div class="card-range">
+                  <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                  <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                  <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                  <div class="range-lines">
+                    <span data-num="2" data-price="10" class="range-line d-none"></span>
+                    <span data-num="9" data-price="15" class="range-line"></span>
+                    <span data-num="16" data-price="20" class="range-line"></span>
+                    <span data-num="23" data-price="25" class="range-line"></span>
+                    <span data-num="30" data-price="30" class="range-line d-none"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="recipe-desc">
+                <p><span class="recipes-mb"></span> mbt/saniye</p>
+                <p><span class="recipe-price"></span>₼aylıq</p>
+              </div>
+              <div class="join-packet">
+                <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+              </div>
+            </div>
+
+
+            <div class="card ">
+              <div class="card-top">
+                <div class="card-title">
+                  <h3>ADSL</h3>
+                  <span class="packet_sort">Biznes</span>
+                </div>
+                <div class="card-range">
+                  <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                  <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                  <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                  <div class="range-lines">
+                    <span data-num="2" data-price="12" class="range-line d-none"></span>
+                    <span data-num="9" data-price="16" class="range-line"></span>
+                    <span data-num="16" data-price="19" class="range-line"></span>
+                    <span data-num="23" data-price="22" class="range-line"></span>
+                    <span data-num="30" data-price="25" class="range-line d-none"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="recipe-desc">
+                <p><span class="recipes-mb"></span> mbt/saniye</p>
+                <p><span class="recipe-price"></span>₼aylıq</p>
+              </div>
+              <div class="join-packet">
+                <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+              </div>
+            </div>
+
+
+            <div class="card ">
+              <div class="card-top">
+                <div class="card-title">
+                  <h3>ADSL</h3>
+                  <span class="packet_sort">Güzəştli</span>
+                </div>
+                <div class="card-range">
+                  <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                  <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                  <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                  <div class="range-lines">
+                    <span data-num="2" data-price="1" class="range-line d-none"></span>
+                    <span data-num="9" data-price="2" class="range-line"></span>
+                    <span data-num="16" data-price="3" class="range-line"></span>
+                    <span data-num="23" data-price="4" class="range-line"></span>
+                    <span data-num="30" data-price="5" class="range-line d-none"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="recipe-desc">
+                <p><span class="recipes-mb"></span> mbt/saniye</p>
+                <p><span class="recipe-price"></span>₼aylıq</p>
+              </div>
+              <div class="join-packet">
+                <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card-container blog2">
+            
+              <div class="card">
+                <div class="card-top">
+                  <div class="card-title">
+                    <h3>ADSL</h3>
+                    <span class="packet_sort">Fərdi</span>
+                  </div>
+                  <div class="card-range">
+                    <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                    <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                    <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                    <div class="range-lines">
+                      <span data-num="2" data-price="10" class="range-line d-none"></span>
+                      <span data-num="9" data-price="15" class="range-line"></span>
+                      <span data-num="16" data-price="20" class="range-line"></span>
+                      <span data-num="23" data-price="25" class="range-line"></span>
+                      <span data-num="30" data-price="30" class="range-line d-none"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-desc">
+                  <p><span class="recipes-mb"></span> mbt/saniye</p>
+                  <p><span class="recipe-price"></span>₼aylıq</p>
+                </div>
+                <div class="join-packet">
+                  <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                  <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-top">
+                  <div class="card-title">
+                    <h3>ADSL</h3>
+                    <span class="packet_sort">Biznes</span>
+                  </div>
+                  <div class="card-range">
+                    <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                    <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                    <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                    <div class="range-lines">
+                      <span data-num="2" data-price="12" class="range-line d-none"></span>
+                      <span data-num="9" data-price="16" class="range-line"></span>
+                      <span data-num="16" data-price="19" class="range-line"></span>
+                      <span data-num="23" data-price="22" class="range-line"></span>
+                      <span data-num="30" data-price="25" class="range-line d-none"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-desc">
+                  <p><span class="recipes-mb"></span> mbt/saniye</p>
+                  <p><span class="recipe-price"></span>₼aylıq</p>
+                </div>
+                <div class="join-packet">
+                  <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                  <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-top">
+                  <div class="card-title">
+                    <h3>ADSL</h3>
+                    <span class="packet_sort">Güzəştli</span>
+                  </div>
+                  <div class="card-range">
+                    <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                    <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                    <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                    <div class="range-lines">
+                      <span data-num="2" data-price="1" class="range-line d-none"></span>
+                      <span data-num="9" data-price="2" class="range-line"></span>
+                      <span data-num="16" data-price="3" class="range-line"></span>
+                      <span data-num="23" data-price="4" class="range-line"></span>
+                      <span data-num="30" data-price="5" class="range-line d-none"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-desc">
+                  <p><span class="recipes-mb"></span> mbt/saniye</p>
+                  <p><span class="recipe-price"></span>₼aylıq</p>
+                </div>
+                <div class="join-packet">
+                  <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                  <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+                </div>
+              </div>
+            
+          </div>
+
+          <div class="card-container blog3">
+            
+              <div class="card">
+                <div class="card-top">
+                  <div class="card-title">
+                    <h3>ADSL</h3>
+                    <span class="packet_sort">Fərdi</span>
+                  </div>
+                  <div class="card-range">
+                    <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                    <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                    <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                    <div class="range-lines">
+                      <span data-num="2" data-price="10" class="range-line d-none"></span>
+                      <span data-num="9" data-price="15" class="range-line"></span>
+                      <span data-num="16" data-price="20" class="range-line"></span>
+                      <span data-num="23" data-price="25" class="range-line"></span>
+                      <span data-num="30" data-price="30" class="range-line d-none"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-desc">
+                  <p><span class="recipes-mb"></span> mbt/saniye</p>
+                  <p><span class="recipe-price"></span>₼aylıq</p>
+                </div>
+                <div class="join-packet">
+                  <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                  <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-top">
+                  <div class="card-title">
+                    <h3>ADSL</h3>
+                    <span class="packet_sort">Biznes</span>
+                  </div>
+                  <div class="card-range">
+                    <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                    <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                    <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                    <div class="range-lines">
+                      <span data-num="2" data-price="12" class="range-line d-none"></span>
+                      <span data-num="9" data-price="16" class="range-line"></span>
+                      <span data-num="16" data-price="19" class="range-line"></span>
+                      <span data-num="23" data-price="22" class="range-line"></span>
+                      <span data-num="30" data-price="25" class="range-line d-none"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-desc">
+                  <p><span class="recipes-mb"></span> mbt/saniye</p>
+                  <p><span class="recipe-price"></span>₼aylıq</p>
+                </div>
+                <div class="join-packet">
+                  <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                  <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-top">
+                  <div class="card-title">
+                    <h3>ADSL</h3>
+                    <span class="packet_sort">Güzəştli</span>
+                  </div>
+                  <div class="card-range">
+                    <label for="range-slider" class="range-start range-num">2 mb/s</label>
+                    <label for="range-slider" class="range-end range-num">30 mb/s</label>
+                    <input type="range" min="2" step="7" max="30" value="2" class="range-slider">
+                    <div class="range-lines">
+                      <span data-num="2" data-price="1" class="range-line d-none"></span>
+                      <span data-num="9" data-price="2" class="range-line"></span>
+                      <span data-num="16" data-price="3" class="range-line"></span>
+                      <span data-num="23" data-price="4" class="range-line"></span>
+                      <span data-num="30" data-price="5" class="range-line d-none"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe-desc">
+                  <p><span class="recipes-mb"></span> mbt/saniye</p>
+                  <p><span class="recipe-price"></span>₼aylıq</p>
+                </div>
+                <div class="join-packet">
+                  <a href="">Ətraflı <img src="/assets/img/next.png" alt=""></a>
+                  <a href="">İndi qoşul <img src="/assets/img/next.png" alt=""></a>
+                </div>
+              </div>
+           
+          </div>
+
+        </div>
       </div>
     </section>
 
+    <section id="two_services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <div id="title_desc">
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolores dolorem cupiditate reprehenderit blanditiis in.</p>
+              <a href="">Lorem</a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+
+            <div id="side_services">
+              
+              <a class="service_item" href="">
+                <img src="/assets/img/serviceitemtop.jpg" alt="service_top_img">
+                <h3>Lorem, ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia!</p>
+                <span href="">lorem</span>
+              </a>
+
+              <a class="service_item" href="">
+                <img src="/assets/img/serviceitembottom.jpg" alt="service_bottom_img">
+                <h3>Lorem, ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quia!</p>
+                <span href="">lorem</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="innovations">
+      <div class="container">
+        <div id="innov_title">
+          <h2>Yeniliklər</h2>
+          <a href="">Bütün yeniliklər</a>
+        </div>
+        <div class="owl-carousel owl-theme owl-loaded">
+          <div class="owl-stage-outer">
+              <div class="owl-stage">
+                  <a href="" class="owl-item">
+                    <div class="owl-item-img">
+                      <img src="/assets/img/innnovations.webp" alt="">
+                    </div>
+                    <div class="owl-item-desc">
+                      <h3>Lorem ipsum dolor sit</h3>
+                      <p>15 sentyabr 2023</p>
+                    </div>
+                  </a>
+                  <a href="" class="owl-item">
+                    <div class="owl-item-img">
+                      <img src="/assets/img/innnovations.webp" alt="">
+                    </div>
+                    <div class="owl-item-desc">
+                      <h3>Lorem ipsum dolor sit</h3>
+                      <p>15 sentyabr 2023</p>
+                    </div>
+                  </a>
+                  <a href="" class="owl-item">
+                    <div class="owl-item-img">
+                      <img src="/assets/img/innnovations.webp" alt="">
+                    </div>
+                    <div class="owl-item-desc">
+                      <h3>Lorem ipsum dolor sit</h3>
+                      <p>15 sentyabr 2023</p>
+                    </div>
+                  </a>
+                  <a href="" class="owl-item">
+                    <div class="owl-item-img">
+                      <img src="/assets/img/innnovations.webp" alt="">
+                    </div>
+                    <div class="owl-item-desc">
+                      <h3>Lorem ipsum dolor sit</h3>
+                      <p>15 sentyabr 2023</p>
+                    </div>
+                  </a>
+                  <a href="" class="owl-item">
+                    <div class="owl-item-img">
+                      <img src="/assets/img/innnovations.webp" alt="">
+                    </div>
+                    <div class="owl-item-desc">
+                      <h3>Lorem ipsum dolor sit</h3>
+                      <p>15 sentyabr 2023</p>
+                    </div>
+                  </a>
+                  
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+            <h2>Xidmətlər</h2>
+            <div class="services_nav">
+              <div>
+                <h3>Efir-kabel tv</h3>
+              </div>
+              <div>
+                <h3>Fiber-optik internet</h3>
+              </div>
+              <div>
+                <h3>ADSL internet</h3>
+              </div>
+              <div>
+                <h3>NNTV</h3>
+              </div>
+              <div>
+                <h3>5</h3>
+              </div>
+              <div>
+                <h3>6</h3>
+              </div>
+              <div>
+                <h3>7</h3>
+              </div>
+              <div>
+                <h3>8</h3>
+              </div>
+              
+            </div>
+            <div class="services_nav_for">
+              <div class="slick_nav_for_item">
+                <div class="row align-items-center">
+                  <div class="col-md-6 service_item_img">
+                    <img src="/assets/img/tplink.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <article>
+                      <h3>Efir-kabel tv</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia et accusamus nam voluptate odio eveniet?</p>
+                      <a href="">Lorem</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="slick_nav_for_item">
+                <div class="row align-items-center">
+                  <div class="col-md-6 service_item_img">
+                    <img src="/assets/img/tplink.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <article>
+                      <h3>Fiber-optik internet</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia et accusamus nam voluptate odio eveniet?</p>
+                      <a href="">Lorem</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="slick_nav_for_item">
+                <div class="row align-items-center">
+                  <div class="col-md-6 service_item_img">
+                    <img src="/assets/img/tplink.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <article>
+                      <h3>ADSL internet</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia et accusamus nam voluptate odio eveniet?</p>
+                      <a href="">Lorem</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="slick_nav_for_item">
+                <div class="row align-items-center">
+                  <div class="col-md-6 service_item_img">
+                    <img src="/assets/img/tplink.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <article>
+                      <h3>NNTV</h3>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia et accusamus nam voluptate odio eveniet?</p>
+                      <a href="">Lorem</a>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <section id="payment">
+      <div class="container">
+        <h2>Onlayn ödəmə</h2>
+        <p class="title_desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique fugit cupiditate a quod culpa doloribus nulla ab veniam non pariatur?</p>
+        <div class="row justify-content-between">
+          <a href="" class="pay_item">
+
+            <div class="pay_box_top">
+              <div>
+                <img src="/assets/img/abb.jpg" alt="" />
+                <span class="pay_title">ABB</span>
+              </div>
+              <span class="pay_way">Onlayn</span>
+            </div>
+
+            <div class="pay_box_bottom">
+              <h5>Lorem, ipsum dolor</h5>
+              <p class="pay_item_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis.</p>
+            </div>
+          </a>
+          <a href="" class="pay_item">
+
+            <div class="pay_box_top">
+              <div>
+                <img src="/assets/img/abb.jpg" alt="" />
+                <span class="pay_title">ABB</span>
+              </div>
+              <span class="pay_way">Onlayn</span>
+            </div>
+
+            <div class="pay_box_bottom">
+              <h5>Lorem, ipsum dolor</h5>
+              <p class="pay_item_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis.</p>
+            </div>
+          </a>
+          <a href="" class="pay_item">
+
+            <div class="pay_box_top">
+              <div>
+                <img src="/assets/img/abb.jpg" alt="" />
+                <span class="pay_title">ABB</span>
+              </div>
+              <span class="pay_way">Onlayn</span>
+            </div>
+
+            <div class="pay_box_bottom">
+              <h5>Lorem, ipsum dolor</h5>
+              <p class="pay_item_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis.</p>
+            </div>
+          </a>
+          <a href="" class="pay_item">
+
+            <div class="pay_box_top">
+              <div>
+                <img src="/assets/img/abb.jpg" alt="" />
+                <span class="pay_title">ABB</span>
+              </div>
+              <span class="pay_way">Onlayn</span>
+            </div>
+
+            <div class="pay_box_bottom">
+              <h5>Lorem, ipsum dolor</h5>
+              <p class="pay_item_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis.</p>
+            </div>
+          </a>
+          <a href="" class="pay_item">
+
+            <div class="pay_box_top">
+              <div>
+                <img src="/assets/img/abb.jpg" alt="" />
+                <span class="pay_title">ABB</span>
+              </div>
+              <span class="pay_way">Onlayn</span>
+            </div>
+
+            <div class="pay_box_bottom">
+              <h5>Lorem, ipsum dolor</h5>
+              <p class="pay_item_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis.</p>
+            </div>
+          </a>
+          <a href="" class="pay_item">
+
+            <div class="pay_box_top">
+              <div>
+                <img src="/assets/img/abb.jpg" alt="" />
+                <span class="pay_title">ABB</span>
+              </div>
+              <span class="pay_way">Onlayn</span>
+            </div>
+
+            <div class="pay_box_bottom">
+              <h5>Lorem, ipsum dolor</h5>
+              <p class="pay_item_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="app">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-4">
+            <img class="app_img" src="/assets/img/app.webp" alt="">
+          </div>
+          <div class="col-md-6 app_content">
+            <h2>MyConnect App</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non itaque recusandae quidem, architecto veritatis?</p>
+            <div class="d-flex align-items-center">
+              <img class="qrcode" src="/assets/img/qrcode.png" alt="">
+              <div class="download ps-md-3">
+                <h5>Download MyConnect App</h5>
+                <p>1000+ download</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="call_section">
+      <div class="container">
+        <div id="call-to-action">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6">
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <a href="">Lorem</a>
+            </div>
+            <div class="col-lg-5 call-img">
+              <img src="/assets/img/tplink.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
-  <footer></footer>
+  <footer>
+    <section id="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-2">
+            <h3>Lorem ipsum dolor</h3>
+            <ul class="foot-menu">
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h3>Lorem ipsum dolor</h3>
+            <ul class="foot-menu">
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h3>Lorem ipsum dolor</h3>
+            <ul class="foot-menu">
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h3>Lorem ipsum dolor</h3>
+            <ul class="foot-menu">
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2">
+            <h3>Lorem ipsum dolor</h3>
+            <ul class="foot-menu">
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h3>Lorem ipsum dolor</h3>
+            <ul class="foot-menu">
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+              <li><a href="">lorem</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="/assets/js/bootstrap.js"></script>
+    <section id="footer-bottom">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div id="foot-logo">
+                <img src="/assets/img/connect_logo.png" alt="connect_logo">
+                <div id="foot-logo-desc">
+                  <p>Lorem, ipsum dolor.</p>
+                  <p>Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <ul id="social-links">
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mt-4 mt-md-5 align-items-center">
+            <div class="col-md-6">
+              <ul id="foot-bottom-end">
+                <li><a href="">+994(55)555-55-55</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+                <li><a href="">lorem</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div id="foot-bottom-right">
+                <ul class="menu_languages">
+                  <li><a href="">Aze</a></li>
+                  <li><a href="">Eng</a></li>
+                  <li><a href="">Ru</a></li>
+                </ul>
+                <div>© Copyright 2023. Bütün hüquqları qorunur</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </footer>
+
+<!-- FAQ -->
+
+  <section id="faq">
+    <div class="container">
+      <h1>FAQ</h1>
+      <div>
+        <h2 class="accordion-title">Lorem ipsum</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FAQ end -->
+  <script src="/assets/js/bootstrap.js"></script> 
   <script src="/assets/js/fontawesome.js"></script>
   <script src="/assets/js/jquery-3.6.3.min.js"></script>
   <script type="text/javascript" src="/assets/js/wowslider.js"></script>
   <script type="text/javascript" src="/assets/js/wowscript.js"></script>
+  <script src="/assets/js/owl.carousel.min.js"></script>
+  <script src="/assets/js/slick.js"></script>
   <script src="/assets/js/script.js"></script>
 </body>
 
