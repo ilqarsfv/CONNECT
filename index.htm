@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connect.az</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,7 @@
   <link rel="stylesheet" href="assets/css/wowslider.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -22,6 +24,7 @@
 <body>
 
   <header>
+
     <nav id="header_nav_top">
       <div class="container">
         <div class="row justify-content-between align-items-center">
@@ -41,21 +44,20 @@
         </div>
       </div>
     </nav>
+
     <nav id="header_nav_bottom">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div id="logo" class="col-3 col-md-2">
+          <div id="logo" class="col-3">
             <a href="">
               <img src="assets/img/connect_logo.png" alt="logo">
             </a>
+            <a id="tel" href="">
+              <i class="fas fa-phone fa-rotate-45"></i> 
+              <span class="fm-mkt">159</span>
+            </a>
           </div>
           <ul id="bottom_menu" class="col-9 col-md-8">
-            <li>
-              <a id="tel" href="">
-                <i class="fas fa-phone-alt"></i>
-                <span class="fm-mkt">159</span>
-              </a>
-            </li>
             <li class="submenu">
               <a href="">Tariflər</a>
               <ul class="dropdown_menu">
@@ -160,10 +162,20 @@
               <a href="">Əlaqə</a>
             </li>
             <li id="own_cabinet">
-              <a href="">ŞƏXSİ KABİNET</a>
+              <a href="">
+                <span>
+                  ŞƏXSİ KABİNET
+                </span>
+                <img src="assets/img/signup.png" alt="">
+              </a>
             </li>
             <li id="join_now">
-              <a href="">İNDİ QOŞUL</a>
+              <a href="">
+                <span>
+                  İNDİ QOŞUL
+                </span>
+                <img src="assets/img/joinow.png" alt="">
+              </a>
             </li>
           </ul>
         </div>
@@ -390,66 +402,82 @@
       </div>
     </section>
     <!----------->
+
   </header>
 
   <main>
-    <section id="wowslider">
-      <div id="wowslider-container0">
-        <div class="ws_images">
-          <ul>
-            <li>
-              <img src="assets/img/slider/slider1.jpg" alt="slider1" title="slider1" id="wows0_0" />
-              <div class="slide-title-wrap">
-                <div class="slide-title">Lorem ipsum dolor sit amet lorem</div>
-                <a href="/products/" class="more-btn">
-                    <div class="more-btn-icon">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <span>Ətraflı</span>        
-                </a>
-            </div>
-            </li>
 
-            <li>
-              <img src="assets/img/slider/slider2.jpg" alt="jquery carousel slider" title="slider2" id="wows0_1" />
-              <div class="slide-title-wrap">
-                <div class="slide-title">Lorem ipsum dolor sit amet lorem</div>
+    <section id="heading-slider">
+      
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/img/slider/slider1.jpg" />
+            <div class="container">
+              <div class="slide-content">
+                <h2>Lorem ipsum dolor sit amet consectetur asd</h2>
                 <a href="/products/" class="more-btn">
-                    <div class="more-btn-icon">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <span>Ətraflı</span>        
-                </a>
+                  <div class="more-btn-icon">
+                      <i class="fas fa-play"></i>
+                  </div>
+                  <span>Ətraflı</span>        
+              </a>
+              </div>
             </div>
-            </li>
-
-            <li>
-              <img src="assets/img/slider/slider3.jpg" alt="slider3" title="slider3" id="wows0_2" />
-              <div class="slide-title-wrap">
-                <div class="slide-title">Lorem ipsum dolor sit amet lorem</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/slider/slider2.jpg" />
+            <div class="container">
+              <div class="slide-content">
+                <h2>Lorem ipsum dolor sit amet consectetur qwe</h2>
                 <a href="/products/" class="more-btn">
-                    <div class="more-btn-icon">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <span>Ətraflı</span>        
-                </a>
+                  <div class="more-btn-icon">
+                      <i class="fas fa-play"></i>
+                  </div>
+                  <span>Ətraflı</span>        
+              </a>
+              </div>
             </div>
-            </li>
-            
-          </ul>
-        </div>
-        <div class="ws_controls">
-          <div class="ws_bullets">
-            <div>
-              <a href="javascript:void(0)" class="ws_selbull fm-mkt"><span>1</span></a>
-              <a href="javascript:void(0)" class="fm-mkt"><span>2</span></a>
-              <a href="javascript:void(0)" class="fm-mkt"><span>3</span></a>
-              <div class="bullet-progress">
-                <div class="ws_bulframe"></div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/slider/slider3.jpg" />
+            <div class="container">
+              <div class="slide-content">
+                <h2>Lorem ipsum dolor sit amet consectetur zxc</h2>
+                <a href="/products/" class="more-btn">
+                  <div class="more-btn-icon">
+                      <i class="fas fa-play"></i>
+                  </div>
+                  <span>Ətraflı</span>        
+              </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/slider/slider2.jpg" />
+            <div class="container">
+              <div class="slide-content">
+                <h2>Lorem ipsum dolor sit amet consectetur  loasd</h2>
+                <a href="/products/" class="more-btn">
+                  <div class="more-btn-icon">
+                      <i class="fas fa-play"></i>
+                  </div>
+                  <span>Ətraflı</span>        
+              </a>
               </div>
             </div>
           </div>
         </div>
+        <!-- <div class="swiper-button-next"></div> -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination fm-mkt"></div>
+          <svg>
+            <line x1="0" y1="0" x2="0" y2="900" style="stroke:rgb(255,0,0);stroke-width:3" />
+          </svg>
+          <!-- <span></span> -->
+      </div>
+      
+
     </section>
 
     <section id="recipes">
@@ -1077,6 +1105,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
 
@@ -1134,7 +1163,7 @@
               <li><a href="">lorem</a></li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-6 col-md-2">
             <h3>Lorem ipsum dolor</h3>
             <ul class="foot-menu">
               <li><a href="">lorem</a></li>
@@ -1194,7 +1223,6 @@
   </footer>
 
 <!-- FAQ -->
-
   <section id="faq">
     <div class="container">
       <h1>FAQ</h1>
@@ -1233,6 +1261,7 @@
           </div>
         </div>
       </div>
+
       <div>
         <h2 class="accordion-title">Lorem ipsum 2</h2>
         <div class="accordion accordion-flush" id="accordionTwo">
@@ -1248,21 +1277,21 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                 lorem 2
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionTwo">
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionTwo">
               <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
                 lorem 3
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionTwo">
               <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
             </div>
           </div>
@@ -1270,15 +1299,91 @@
       </div>
     </div>
   </section>
-
 <!-- FAQ end -->
+
+<!-- Static pages -->
+
+  <section id="static">
+    <div class="container">
+      
+      <h1>Haqqımızda</h1>
+      <div class="row">
+        <div id="cat-content" class="col-lg-9">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Lorem ipsum dolor sit amet.</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere?</div>
+          </div>
+        </div>
+        <div id="cat-menu" class="col-lg-2">
+          <h2>lorem</h2>
+          <ul>
+            <li><a href="" class="active">Haqqımızda</a></li>
+            <li><a href="">lorem</a></li>
+            <li><a href="">lorem</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Static end -->
+
+
+<!-- Contact Us -->
+
+  <section id="contact-us">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-3 mb-md-0 mb-3 contact-info">
+          <img src="assets/img/callphone.svg" alt="callphone">
+          <p><a href="">lorem: <span class="fm-mkt">+994555555555</span></a></p>
+          <p><a href="">lorem: <span class="fm-mkt">+994555555555</span></a></p>
+          <p><a href="">lorem: <span class="fm-mkt">+994555555555</span></a></p>
+        </div>
+        <div class="col-lg-3 mb-md-0 mb-3 contact-info">
+          <img src="assets/img/mailbox.png" alt="mailbox">
+          <p>İş qrafiki: <span class="fm-mkt">09:00 - 18:00</span> (I - V günlər)</p>
+          <p><a href="">Email: info@lorem.az</a></p>
+        </div>
+        <div class="col-lg-3 mb-md-0 mb-3 contact-info">
+          <img src="assets/img/location.png" alt="location">
+          <p>Bakı</p>
+          <p>Lorem, ipsum dolor.</p>
+        </div>
+      </div>
+      <div id="contact-form">
+        <form action="">
+          <div class="row">
+            <div class="col-lg-6 p-0 p-md-1 ps-md-0">
+              <input type="text" placeholder="Adınız Soyadınız">
+            </div>
+            <div class="col-lg-6 pm-0 p-md-1 pe-md-0">
+              <input type="text" placeholder="Telefon nömrəniz">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mesajınız"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact End -->
   <script src="assets/js/bootstrap.js"></script> 
   <script src="assets/js/fontawesome.js"></script>
   <script src="assets/js/jquery-3.6.3.min.js"></script>
-  <script type="text/javascript" src="assets/js/wowslider.js"></script>
-  <script type="text/javascript" src="assets/js/wowscript.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/wowslider.js"></script> -->
+  <!-- <script type="text/javascript" src="assets/js/wowscript.js"></script> -->
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/slick.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 

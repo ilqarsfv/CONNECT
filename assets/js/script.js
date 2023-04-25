@@ -51,6 +51,7 @@ $(document).ready(function () {
     // --------------------------------------------
 
     $("#wowslider .ws_cover").remove()
+    
 
     // -----------------------------------------
 
@@ -120,17 +121,34 @@ $(document).ready(function () {
         adaptiveHeight: !0,
         touchThreshold: 100,
         asNavFor: ".services_nav",
-
-
     });
+    const progressCircle = document.querySelector("#heading-slider svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper("#heading-slider .mySwiper", {
+        spaceBetween: 30,
+        loop: true,
+        effect: "fade",
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: 'custom',
+            renderCustom: function (swiper, current, total) {
+                return current; 
+            }
+        },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 2 - progress);
+            //   progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+          }
+      });
 
 })
-
-
-
-
-
-
-
-
-
