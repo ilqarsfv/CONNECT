@@ -988,16 +988,21 @@ footer h3{
     align-items: center;
     justify-content: flex-end;
 }
+#social-links li {
+    display: inline-block;
+    margin-right: 8px;
+}
 #social-links a {
     transition: all .3s linear;
-    width: 45px;
-    height: 45px;
+    /* width: 45px; */
+    /* height: 45px; */
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     /* background-color: #eaeaea; */
-    margin: 4px;
+    margin: 0px 15px;
+    font-size: 18px;
 }
 #foot-bottom-end {
     display: flex;
@@ -1039,7 +1044,7 @@ footer h3{
 
 #other-lang {
     position: absolute;
-    left: -140px;
+    left: -160px;
     top: 4px;
     display: none;
 }
