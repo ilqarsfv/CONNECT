@@ -1556,20 +1556,6 @@ textarea {
         display: none;
     }
 
-    #wowslider-container0 .ws_controls,
-    #wowslider-container0 .ws_bullets,
-    #wowslider-container0 .ws_thumbs {
-        display: block;
-    }
-
-    #wowslider-container0 .ws_bullets div a {
-        width: 30px;
-    }
-
-    #wowslider-container0 .ws_bullets .bullet-progress {
-        left: 29px;
-    }
-
     #mobile_nav {
         padding: 30px 10px 30px 30px;
     }
@@ -1599,14 +1585,6 @@ textarea {
     #recipes .card {
         width: 100%;
         box-shadow: 0px 2px 30px -9px rgba(0, 0, 0, .6);
-    }
-    #wowslider-container0 .ws_images li .slide-title-wrap .slide-title {
-        font-size: 30px;
-        line-height: 45px;
-    }
-    #wowslider-container0 .ws_images li .slide-title-wrap {
-        width: 80%;
-        padding-left: 20px;
     }
     #two_services {
         padding: 60px 0px;
