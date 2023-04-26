@@ -495,6 +495,7 @@ label.range-end {
 #side_services .service_item:hover img {
     transform: scale(1.2);
 }
+
 #side_services h3,
 #side_services p,
 #side_services span {
@@ -517,13 +518,15 @@ label.range-end {
     justify-content: center;
     color: #fff;
     padding: 15px 80px;
-    background-color: red;
+    background-color: #EA1D24;
     border-radius: 30px;
     transition: all .3s linear;
 }
-#title_desc span:hover,
-#side_services span:hover {
+#side_services .service_item:hover span,#title_desc a:hover {
     background-color: #bc1d23;
+}
+#side_services .text-white {
+    font-size: 35px;
 }
 /* ------------------- */
 
@@ -675,6 +678,10 @@ label.range-end {
 #services .services_nav .slick-next:hover:before {
     left: 0;
 }
+#services .services_nav_for {
+    background-color: #fff;
+    border-radius: 25px;
+}
 .services_nav_for article {
     display: flex;
     flex-direction: column;
@@ -773,7 +780,7 @@ label.range-end {
 }
 #payment .title_desc {
     font-size: 20px;
-    max-width: 60%;
+    /* max-width: 70%; */
     margin: 40px 0px 30px;
     line-height: 30px;
 }
@@ -783,18 +790,18 @@ label.range-end {
     justify-content: space-between;
 }
 .pay_box_top img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 80px;
+    /* height: 40px; */
+    /* border-radius: 50%; */
     object-fit: cover;
 }
 .pay_box_top div {
     display: flex;
     align-items: center;
 }
-.pay_title {
+/* .pay_title {
     margin-left: 8px;
-}
+} */
 .pay_way {
     background-color: #A6A6A6;
     display: flex;
@@ -1256,7 +1263,7 @@ textarea {
     position: absolute;
     top: 40%;
     color: #fff;
-    width: 50%;
+    width: 60%;
     padding-left: 60px;
 }
 #heading-slider .slide-content h2 {
