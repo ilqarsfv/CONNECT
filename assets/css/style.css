@@ -1054,6 +1054,7 @@ footer h3{
 #copyright {
     display: flex;
     align-items: center;
+    font-size: 15px;
 } 
 #copyright img {
     width: 80px;
