@@ -1337,8 +1337,8 @@ textarea {
     }
 
     .menu-wrap {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         transition: visibility .6s ease, opacity .6s ease, transform .6s ease, -webkit-transform .6s ease;
         position: relative;
         display: flex;
