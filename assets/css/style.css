@@ -886,7 +886,7 @@ label.range-end {
 }
 
 #call-to-action {
-    padding: 40px;
+    padding: 100px 40px;
     background-color: #EA1825;
     border-radius: 15px;
 }
@@ -966,8 +966,6 @@ footer h3{
     border-bottom: 1px solid #0002;
     padding-bottom: 40px;
 }
-
-
 #footer-bottom{
     padding-top: 40px;
 }
@@ -1017,6 +1015,52 @@ footer h3{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.lang_social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer-lang {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 8px;
+}
+.current_lang {
+    display: flex;
+    align-items: center;
+}
+.current_lang img {
+    width: 22px; 
+    object-fit: cover;
+    margin-right: 3px;
+}
+.footer-lang li {
+    cursor: pointer;
+}
+
+#other-lang {
+    position: absolute;
+    left: -140px;
+    top: 4px;
+    display: none;
+}
+
+#other-lang.active {
+    display: flex;
+}
+
+.footer-lang ul li {
+    margin-right: 5px;
+}
+#copyright {
+    display: flex;
+    align-items: center;
+} 
+#copyright img {
+    width: 80px;
+    margin-left: 8px;
 }
 /* ------------------- */
 
@@ -1308,7 +1352,31 @@ textarea {
 
 
 @media only screen and (max-width: 768px) {
-
+    footer  {
+        padding-bottom: 40px;
+    }
+    #copyright {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    #copyright img {
+        margin-top: 30px;
+        width: 150px;
+    }
+    .footer-lang {
+        flex-direction: column;
+    }
+    #other-lang {
+        position: unset;
+        margin-top: 20px;
+    }
+    .lang_social {
+        display: initial;
+    }
+    .footer-lang {
+        justify-content: center;
+        margin-top: 30px;
+    }
     #mobile_nav,
     #mob_menu {
         display: block;
@@ -1660,16 +1728,16 @@ textarea {
     #foot-bottom-end {
         flex-direction: column;
         align-items: center;
+        margin-top: 20px;
     }
     #foot-bottom-end li {
         line-height: 25px;
     }
     #foot-bottom-right {
         flex-direction: column;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     } 
     #foot-bottom-right div {
-        margin-top: 20px;
         line-height: 25px;
         text-align: center;
     }
@@ -1752,5 +1820,9 @@ textarea {
         max-width: 1200px;
     }
 }
-
+@media only screen and (min-width: 768px)  {
+    #foot-bottom-end li:nth-child(1) {
+        margin-right: 50px;
+    }
+}
 

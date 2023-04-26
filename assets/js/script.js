@@ -151,4 +151,12 @@ $(document).ready(function () {
           }
       });
 
+      $(".lang_social .current_lang").on("click",()=>{
+        $("#other-lang").toggleClass("active")
+      })
+      $(document).on("click", (event) => {
+        const target = $(event.target);
+        target.is("#other-lang") || target.parents("#other-lang").length || target.is(".current_lang") || target.parents(".current_lang").length ? null : $("#other-lang").removeClass("active");
+      });
+      
 })
