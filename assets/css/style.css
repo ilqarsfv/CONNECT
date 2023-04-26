@@ -186,6 +186,10 @@ header {
     border-radius: 10px;
     transition: all .3s;
     text-align: center;
+    border: 2px solid #e64c21;
+}
+#own_cabinet {
+    border-color: #fff;
 }
 #join_now a,
 #own_cabinet a {
@@ -204,7 +208,6 @@ header {
 }
 #own_cabinet:hover {
     background: transparent;
-    border: 2px solid #fff;
 }
 #own_cabinet:hover a {
     color: #fff;
