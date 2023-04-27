@@ -191,6 +191,9 @@ header {
 #own_cabinet {
     border-color: #fff;
 }
+#own_cabinet span {
+    margin-top: 3px;
+}
 #join_now a,
 #own_cabinet a {
     padding: 10px 10px;
@@ -200,11 +203,12 @@ header {
 #own_cabinet img,
 #join_now img {
     width: 25px;
-    margin-left: 3px;
+    margin-left: 4px;
     transition: all .3s linear;
 }
 #join_now img {
     filter: invert(1);
+    margin-left: 8px;
 }
 #own_cabinet:hover {
     background: transparent;
