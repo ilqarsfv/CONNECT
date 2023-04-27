@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     // tariflerdeki inputun deyeri deyisdikce oxlarin itmesi ve deyerlerin deyismesi
-    const rangeSliders = $(".range-slider");
+    const rangeSliders = $(".styled-slider");
     const cards = $(".cards .card");
 
     cards.each(function (i, card) {
@@ -128,10 +128,10 @@ $(document).ready(function () {
         spaceBetween: 30,
         loop: true,
         effect: "fade",
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -160,3 +160,4 @@ $(document).ready(function () {
       });
       
 })
+

@@ -238,6 +238,8 @@ header {
 /* recipes - tarifler */
 #recipes {
     background: #FBFBFB;
+    padding-bottom: 60px;
+    padding-top: 20px;
 }
 
 .cards {
@@ -279,6 +281,7 @@ header {
 }
 
 .card {
+    overflow: hidden;
     background-color: #fff;
     border-radius: 12px;
     width: 32%;
@@ -295,12 +298,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .cards .card-title h3 {
     font-size: 24px;
     font-weight: 900;
     line-height: 1.29;
+    color: #fff;
 }
 
 .packet_sort {
@@ -327,7 +332,9 @@ header {
 
 label.range-num {
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 16px;
 }
 
 label.range-start {
@@ -336,11 +343,7 @@ label.range-start {
 
 label.range-end {
     right: 0;
-}
-
-.range-slider {
-    width: 100%;
-}
+} 
 
 .range-lines {
     position: relative;
@@ -368,7 +371,13 @@ label.range-end {
     justify-content: space-between;
     min-height: 120px;
 }
-
+.recipe-desc p:nth-child(1) {
+    color: #31bd5d;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 40px;
+}
 .recipe-price {
     margin-right: 4px;
 }
@@ -377,7 +386,19 @@ label.range-end {
 .recipe-desc {
     border-bottom: 1px solid #3333;
 }
-
+.card-top {
+    background-color: #fb315f;
+    position: relative;
+    overflow: hidden;
+}
+.card-top img {
+    width: 291px;
+    position: absolute;
+    right: -78px;
+    top: -53px;
+    z-index: 0;
+    filter: grayscale(100) brightness(100);
+}
 .join-packet {
     padding: 30px;
     display: flex;
@@ -387,23 +408,25 @@ label.range-end {
 .join-packet a {
     display: inline-flex;
     align-items: center;
-    padding: 10px 19px;
-    border: 1px solid #3333;
-    font-size: 15px;
-    border-radius: 21px;
-    width: 40%;
+    padding: 18px 42px;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 13px;
+    width: 45%;
     font-size: 18px;
+    text-align: center;
     justify-content: space-between;
-    transition: all .3s linear;
+    transition: all 0.3s linear 0s;
 }
 
 .join-packet a:nth-child(1) {
     background-color: #EA1D24;
     color: #fff;
+    border: 2px solid;
 }
 
 .join-packet a:nth-child(2) {
-    background-color: #ffdadb;
+    background-color: #fb315f;
+    color: #fff;
 }
 
 .join-packet a:hover {
@@ -411,11 +434,7 @@ label.range-end {
     color: #fff;
 }
 
-.join-packet a:hover img {
-    filter: invert(1);
-}
-
-.join-packet a:nth-child(1) img {
+.join-packet a img {
     filter: invert(1);
 }
 
@@ -1355,6 +1374,10 @@ textarea {
 
 
 @media only screen and (max-width: 768px) {
+    .recipe-desc p:nth-child(1) {
+        font-size: 24px;
+        padding: 30px;
+    }
     footer  {
         padding-bottom: 40px;
     }
@@ -1726,12 +1749,11 @@ textarea {
     }
     #social-links {
         justify-content: center;
-        margin-top: 20px;
+        margin-block: 20px;
     }
     #foot-bottom-end {
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
     }
     #foot-bottom-end li {
         line-height: 25px;
