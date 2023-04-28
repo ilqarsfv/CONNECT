@@ -1,20 +1,20 @@
 @font-face {
     font-family: "CocoSharp";
-    src: url("cocosharpbold.ttf") format("truetype");
+    src: url("CocoSharp-Bold.woff") format("truetype");
     font-weight: 700;
 }
 @font-face {
     font-family: "CocoSharp";
-    src: url("cocosharpextrabold.ttf") format("truetype");
+    src: url("CocoSharp-Extrabold.woff") format("truetype");
     font-weight: 800;
 }
 @font-face {
     font-family: "CocoSharp";
-    src: url("cocosharpregular.ttf") format("truetype");
+    src: url("CocoSharp-Regular.ttf") format("truetype");
     font-weight: 400;
 }
 @font-face {
     font-family: "CocoSharp";
-    src: url("cocosharplight.ttf") format("truetype");
+    src: url("Coco-Sharp-Heavy-trial.ttf") format("truetype");
     font-weight: 100;
 }

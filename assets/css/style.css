@@ -4,8 +4,7 @@
     font-style: normal;
 }
 
-a,
-a:hover {
+a,a:hover {
     text-decoration: none;
     color: #000;
 }
@@ -13,13 +12,6 @@ a:hover {
 body {
     min-height: 100vh;
     font-family: "CocoSharp" !important;
-}
-
-/* custom classes */
-.fm-mkt {
-    font-family: 'Mukta', sans-serif;
-    font-family: 400;
-    margin-left: 3px;
 }
 
 /* --------------- */
@@ -664,15 +656,19 @@ label.range-end {
 .services_nav .slick-slide {
     margin: 0px 5px;
 }
+.services_nav_for article h2 {
+    margin-bottom: 20px;
+}
 .services_nav {
     max-width: calc(100% - 110px);
     margin: 40px auto;
 }
 
-#services .services_nav .slick-center h3 {
+#services .slick-current.slick-active h3 {
     background: #EA1D24;
     color: #FFFCF8;
 }
+
 #services .services_nav .slick-prev:before,
 #services .services_nav .slick-next:before {
     content: "\f060";
