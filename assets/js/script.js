@@ -38,7 +38,6 @@ $(document).ready(function () {
         const currentPrice = card.find(".recipe-price");
         currentMb.text(rangeVal);
         currentPrice.text(dataNum.attr("data-price"));
-        // inputdaki line gizlenmesi
         for (let i = 0; i < dataNums.length; i++) {
             if (i < rangeVal / 4 - 1) {
                 dataNums.eq(i).css({ opacity: 0 });
@@ -83,7 +82,6 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: !1,
         speed: 300,
-        // centerMode: true,
         centerPadding: "0px",
         focusOnSelect: !0,
         prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fas fa-arrow-left'></i></button>",
@@ -123,7 +121,6 @@ $(document).ready(function () {
         asNavFor: ".services_nav",
     });
     const progressCircle = document.querySelector("#heading-slider svg");
-    const progressContent = document.querySelector(".autoplay-progress span");
     var swiper = new Swiper("#heading-slider .mySwiper", {
         spaceBetween: 30,
         loop: true,
@@ -146,7 +143,6 @@ $(document).ready(function () {
         on: {
             autoplayTimeLeft(s, time, progress) {
               progressCircle.style.setProperty("--progress", 2 - progress);
-            //   progressContent.textContent = `${Math.ceil(time / 1000)}s`;
             }
           }
       });
