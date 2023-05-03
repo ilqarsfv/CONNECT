@@ -32,6 +32,10 @@ header {
 #header_nav_top {
     background: #FAFAFA;
     padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    transition: all .3s linear;
 }
 
 #header_nav_top ul {
@@ -100,7 +104,11 @@ header {
 }
 
 #header_nav_bottom {
+    position: fixed;
+    top: 52px;
     padding: 20px 0px;
+    width: 100%;
+    transition: all .3s linear;
 }
 
 #tel {
@@ -2051,5 +2059,15 @@ textarea {
 @media only screen and (min-width: 768px) {
     #foot-bottom-end li:nth-child(1) {
         margin-right: 50px;
+    }
+    header.fixed #header_nav_top{
+        /* position: fixed; */
+        top: -53px;
+        background-color: #0005;
+    }
+    header.fixed #header_nav_bottom{
+        /* position: fixed; */
+        top: 0;
+        background-color: #0005;
     }
 }

@@ -154,6 +154,18 @@ $(document).ready(function () {
         const target = $(event.target);
         target.is("#other-lang") || target.parents("#other-lang").length || target.is(".current_lang") || target.parents(".current_lang").length ? null : $("#other-lang").removeClass("active");
       });
-      
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 51) {
+            $('header').addClass('fixed');
+        }
+        else {
+            $('header').removeClass('fixed');
+        }
+    });
+    
+
+
 })
 
