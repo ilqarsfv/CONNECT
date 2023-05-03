@@ -2052,14 +2052,15 @@ textarea {
         margin-right: 50px;
     }
     header.fixed #header_nav_top{
-        /* position: fixed; */
         top: -53px;
         background-color: #0005;
     }
     header.fixed #header_nav_bottom{
-        /* position: fixed; */
         top: 0;
         background-color: #0005;
+    }
+    header.fixed .submenu>a {
+        color: #fff;
     }
     #static {
         background-color: #F4F4F4;
