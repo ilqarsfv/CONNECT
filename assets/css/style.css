@@ -272,6 +272,7 @@ header {
 
 .title p {
     font-size: 19px;
+    line-height: 27px;
 }
 
 .blog-titles {
@@ -885,8 +886,8 @@ label.range-end {
 
 #payment .title_desc {
     font-size: 20px;
-    margin: 40px 0px 30px;
-    line-height: 30px;
+    margin: 20px 0px 30px;
+    line-height: 25px;
 }
 
 .pay_box_top {
