@@ -1437,7 +1437,6 @@ textarea {
 /* slider */
 #heading-slider {
     position: relative;
-    top: -120px;
 }
 
 #heading-slider .swiper-slide {
