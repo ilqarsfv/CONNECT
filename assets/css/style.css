@@ -1274,10 +1274,7 @@ footer h3 {
 /* ------------------- */
 
 /* static */
-#static {
-    padding: 60px 0px;
-    background-color: #F4F4F4;
-}
+
 
 #static h1 {
     font-size: 2.5rem;
@@ -1370,10 +1367,6 @@ footer h3 {
     color: #97a4af;
 }
 /* Contact us */
-#contact-us {
-    padding: 50px 0px;
-    background-color: #FBFBFB;
-}
 
 #contact-us .contact-info,
 #contact-form {
@@ -2067,5 +2060,15 @@ textarea {
         /* position: fixed; */
         top: 0;
         background-color: #0005;
+    }
+    #static {
+        background-color: #F4F4F4;
+        padding-top: 200px;
+        padding-bottom: 60px;
+    }
+    #contact-us {
+        padding-top: 200px;
+        padding-bottom: 60px;
+        background-color: #FBFBFB;
     }
 }
