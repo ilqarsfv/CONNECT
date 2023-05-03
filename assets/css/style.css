@@ -258,8 +258,7 @@ header {
 /* recipes - tarifler */
 #recipes {
     background: #FBFBFB;
-    padding-bottom: 60px;
-    padding-top: 20px;
+    padding: 60px 0px;
 }
 
 .cards {
