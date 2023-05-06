@@ -191,7 +191,7 @@ header {
     border-radius: 10px;
     transition: all .3s;
     text-align: center;
-    border: 2px solid #e64c21;
+    border: 2px solid #3FDC5B;
 }
 
 #own_cabinet {
@@ -234,7 +234,7 @@ header {
 }
 
 #join_now {
-    background-color: #e64c21;
+    background-color: #3FDC5B;
 }
 
 #join_now a {
@@ -242,7 +242,7 @@ header {
 }
 
 #join_now:hover {
-    background-color: #cd3b12;
+    background-color: #3ec356;
 }
 
 
