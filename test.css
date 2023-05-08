@@ -1,0 +1,160 @@
+.cards .card-title {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.cards .card-title h3 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.29;
+    color: #fff;
+}
+
+.packet_sort {
+    font-size: 12px;
+    line-height: 1.42;
+    text-align: center;
+    border-radius: 13px;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    white-space: nowrap;
+    padding: 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+}
+
+.card-range {
+    position: relative;
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+
+label.range-num {
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+label.range-start {
+    left: 0;
+}
+
+label.range-end {
+    right: 0;
+}
+
+.range-lines {
+    position: relative;
+    top: -16.5px;
+    width: 48%;
+    margin: 0px auto;
+    justify-content: space-between;
+    display: flex;
+    pointer-events: none;
+}
+
+.range-lines .range-line {
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background-color: #9a9a9a;
+}
+
+.recipe-desc {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+    padding: 40px;
+}
+
+.recipe-desc p:nth-child(1) {
+    color: #31bd5d;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.recipe-price {
+    margin-right: 4px;
+}
+
+.card-top,
+.recipe-desc {
+    border-bottom: 1px solid #3333;
+}
+
+.card-top {
+    background-color: #fb315f;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-top img {
+    width: 291px;
+    position: absolute;
+    right: -78px;
+    top: -53px;
+    z-index: 0;
+    filter: grayscale(100) brightness(100);
+}
+
+.join-packet {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-packet a {
+    display: inline-flex;
+    align-items: center;
+    padding: 18px 42px;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 13px;
+    width: 45%;
+    font-size: 18px;
+    text-align: center;
+    justify-content: space-between;
+    transition: all 0.3s linear 0s;
+}
+
+.join-packet a:nth-child(1) {
+    background-color: #EA1D24;
+    color: #fff;
+    border: 2px solid;
+}
+
+.join-packet a:nth-child(2) {
+    background-color: #fb315f;
+    color: #fff;
+    padding-left: 30px;
+}
+
+.join-packet a:nth-child(2) span {
+    white-space: nowrap;
+    margin-right: 3px;
+}
+
+.join-packet a:hover {
+    background-color: #d5242a;
+    color: #fff;
+}
+
+.join-packet a img {
+    filter: invert(1);
+}
+
+.join-packet img {
+    width: 15px;
+    transition: all .3s linear;
+    margin-left: 3px;
+}

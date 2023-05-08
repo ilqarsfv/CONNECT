@@ -75,7 +75,7 @@ $(document).ready(function () {
             }
           }
       });
-
+    
       $(".lang_social .current_lang").on("click",()=>{
         $("#other-lang").toggleClass("active");
       });
@@ -96,6 +96,34 @@ $(document).ready(function () {
         }
     });
     
+    $('.cards .cards-owl-1').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
+    // var swiper = new Swiper(".cards .mySwiper", {
+    //     slidesPerView: 'auto',
+    //     initialSlide:0,
+    //     loop:true,
+    //     loopedSlides:10,
+    //     visibilityFullFit: true,
+    //     autoResize: false,
+    //     slidesPerView: 3,
+    //     loop:true,
+    //     spaceBetween: 20,
+    //   });
     $('#innovations .owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
