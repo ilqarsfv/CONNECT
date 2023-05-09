@@ -126,9 +126,10 @@ $(document).ready(function () {
     //   });
     $('#innovations .owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 20,
         nav: false,
         smartSpeed: 600,
+        stagePadding:10,
         responsive: {
             0: {
                 items: 1,
