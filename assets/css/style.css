@@ -83,6 +83,9 @@ header {
 
 #logo a:nth-child(1) {
     margin-right: 25px;
+    background: #fff2;
+    padding: 5px;
+    border-radius: 3px;
 }
 
 #logo img {
@@ -2058,13 +2061,21 @@ textarea {
 
     header.fixed #header_nav_bottom {
         top: 0;
-        background-color: #0005;
+        background-color: #fff;
     }
 
     header.fixed .submenu>a {
-        color: #fff;
+        color: #000;
     }
-
+    header.fixed #own_cabinet{
+        border-color: #000;
+    }
+    header.fixed #own_cabinet:hover a{
+        color: #000;
+    }
+    header.fixed #own_cabinet:hover img {
+        filter: none;
+    }
     #static {
         background-color: #F4F4F4;
         padding-top: 200px;
