@@ -135,6 +135,8 @@ $(document).ready(function () {
                 items: 1,
                 stagePadding: 20,
                 mouseDrag: true,
+                margin:10,
+                stagePadding: 0
             },
             600: {
                 items: 2,

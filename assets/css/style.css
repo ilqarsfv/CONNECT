@@ -305,42 +305,65 @@ header {
 
 .card {
     background-color: #fff;
-    border-radius: 5px;
     width: 25%;
     box-shadow: 20px 3px 30px rgba(0, 0, 0, .04);
     transition: all .4s ease-in-out;
     position: relative;
-}
-
-.card:hover {
-    transform: scale(1.02);
+    padding-bottom: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .card-top {
-    padding: 30px 0px;
-    background-image: -webkit-linear-gradient(left, #5b83cd 0%, #c280bf 100%);
-    background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+    height: 200px;
+    position: relative;
+    background-color: #fb315f;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
-
+.card-top img {
+    filter: grayscale(1) brightness(10);
+    position: absolute;
+    right: -78px;
+    top: -53px;
+    z-index: 2;
+}
+.card-top-title-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
 .card-top h2 {
-    text-align: center;
-    font-size: 24px;
-    letter-spacing: 0.2em;
-    line-height: 1;
     color: #fff;
+    font-size: 30px;
     font-weight: 600;
 }
-
+.card-top-title-wrapper span {
+    background-color: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    display: inline-block;
+    padding: 5px 20px ;
+}
+.card-top img {
+    width: 70% !important;
+    object-fit: contain;
+}
 .recipe-desc {
     padding: 50px 30px 40px;
 }
-
 .speed {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .speed span {
     font-weight: 400;
     letter-spacing: 5px;
@@ -348,8 +371,6 @@ header {
     margin: 0;
     font-size: 1.5rem;
     text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
 }
 
 .speed span>i {
@@ -408,26 +429,35 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    width: 50%;
-    bottom: -40px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 45%;
     border-radius: 5px;
     padding: 14px 0px;
     color: #fff;
-    background-image: linear-gradient(to right, #5b83cd 0%, #c280bf 100%);
+    background-color: #EA1D24;
+    transition: all .3s linear;
 }
-
 .join-packet:hover {
     color: #fff;
+    background-color: #ec0008;
 }
+.join-now {
+    background-color: #FB315F;
+}
+.join-now:hover {
+    background-color: #ff1b4f;
+}
+
 
 .cards .owl-carousel .owl-stage-outer,
 #innovations .owl-carousel .owl-stage-outer {
     padding: 40px 0px;
 }
-
+.join-wrapper {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
 /* ------------------- */
 
 
@@ -2019,6 +2049,19 @@ textarea {
     #heading-slider .swiper-pagination {
         left: -20px;
         bottom: 100px;
+    }
+    .blog-title  {
+        font-size: 18px;
+    }
+    .recipe-desc {
+        padding: 30px 30px 20px;
+    }
+    .card-top {
+        height: 150px;
+    }
+    .card-top img {
+        width: 90% !important
+        ;
     }
 }
 
