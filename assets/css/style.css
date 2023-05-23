@@ -117,7 +117,7 @@ header {
     display: flex;
     align-items: center;
     color: #fff;
-    padding: 10px 20px;
+    padding: 13px 20px;
 }
 
 #tel i {
@@ -131,7 +131,7 @@ header {
     margin-left: 2px;
 }
 header.fixed #tel {
-    background-color: #d9d9d9;
+    background-color: #d9d9d926;
 }
 header.fixed #tel i,
 header.fixed #tel span {
@@ -200,29 +200,21 @@ header.fixed #tel span {
     border-radius: 30px;
     transition: all .3s;
     text-align: center;
-    border: 2px solid #ff5e00;
+    border: 2px solid #e45502;
     margin-right: 0px !important;
 }
-header.fixed #own_cabinet:hover {
-    background-color: #e8e8e8;
-}
-#own_cabinet span {
-    margin-top: 3px;
-}
-
 #join_now a,
 #own_cabinet a {
     padding: 12px 17px;
     display: flex;
+    height: 50px;
     align-items: center;
     transition: all .3s linear;
-}
-#own_cabinet a {
-    color: #525252;
 }
 #join_now a span,
 #own_cabinet a span {
     font-weight: 700;
+    transition: all .3s linear;
 }
 #own_cabinet img,
 #join_now img {
@@ -230,37 +222,38 @@ header.fixed #own_cabinet:hover {
     margin-left: 4px;
     transition: all .3s linear;
 }
-
+#own_cabinet {
+    background-color: transparent;
+}
+#own_cabinet span {
+    margin-top: 3px;
+    color: #D73A33;
+}
+#own_cabinet img {
+    filter: invert(32%) sepia(78%) saturate(1553%) hue-rotate(337deg) brightness(86%) contrast(97%);
+}
+#own_cabinet:hover span{
+    color: #EA1D24;
+}
+#own_cabinet:hover img {
+    filter: invert(15%) sepia(90%) saturate(4565%) hue-rotate(351deg) brightness(95%) contrast(92%);
+}
+#join_now {
+    background-color: #ff5e00;
+}
 #join_now img {
     filter: invert(1);
     margin-left: 8px;
 }
-
-#own_cabinet:hover {
-    background: transparent;
-}
-
-#own_cabinet:hover a {
+#join_now span {
     color: #fff;
 }
-
-#own_cabinet:hover img {
-    filter: invert(1);
-}
-
-#join_now {
-    background-color: #ff5e00;
-}
-
-#join_now a {
-    color: #fff;
-}
-
 #join_now:hover {
     background-color: #e05300;
 }
-
-
+header.fixed #own_cabinet:hover {
+    background-color: #e8e8e8;
+}
 
 /* ------------------- */
 
@@ -292,6 +285,27 @@ header.fixed #own_cabinet:hover {
 #recipes .owl-carousel .owl-nav button.owl-next {
     right: -50px;
 }
+#recipes .button-layout {
+    position: absolute;
+    top: 40px;
+    width: 30px;
+    background: #000;
+    opacity: .4;
+    z-index: 222;
+    bottom: 40px;  
+    filter: blur(1px);
+    cursor: pointer;
+}
+#recipes .owl-prev-layout {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#recipes .owl-next-layout {
+    right:0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 .title h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -313,22 +327,29 @@ header.fixed #own_cabinet:hover {
     font-size: 25px;
     font-weight: 600;
     margin-top: 30px;
+    margin-right: 45px;
+    position: relative;
 }
+.blog-title.active::after {
+    content: '';    
+    height: 1px;
+    position: absolute;
+    background-color: #000;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
 
-.card-container {
-    display: none;
 }
-
 #recipes .card-container.active {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
 }
-
-.blog-title.active {
-    border-bottom: 1px solid;
+.card-container {
+    display: none;
 }
+
 
 .card {
     background-color: #fff;
@@ -342,7 +363,7 @@ header.fixed #own_cabinet:hover {
 }
 
 .card-top {
-    height: 200px;
+    height: 145px;
     position: relative;
     background-color: #fb315f;
     overflow: hidden;
@@ -352,7 +373,7 @@ header.fixed #own_cabinet:hover {
 .card-top img {
     filter: grayscale(1) brightness(10);
     position: absolute;
-    right: -78px;
+    right: -100px;
     top: -53px;
     z-index: 2;
 }
@@ -389,15 +410,16 @@ header.fixed #own_cabinet:hover {
 .speed {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .speed span {
-    font-weight: 400;
-    letter-spacing: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
     line-height: 1.3;
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 4.5rem;
     text-transform: uppercase;
+    color: #32BA78;
 }
 
 .speed span>i {
@@ -446,10 +468,8 @@ header.fixed #own_cabinet:hover {
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-}
-
-.month {
     margin-left: 5px;
+
 }
 
 .join-packet {
@@ -458,7 +478,7 @@ header.fixed #own_cabinet:hover {
     justify-content: center;
     width: 45%;
     border-radius: 5px;
-    padding: 14px 0px;
+    padding: 24px 0px;
     color: #fff;
     background-color: #EA1D24;
     transition: all .3s linear;
@@ -483,7 +503,7 @@ header.fixed #own_cabinet:hover {
     display: flex;
     width: 90%;
     margin: auto;
-    justify-content: space-between;
+    justify-content: center;
 }
 /* ------------------- */
 
@@ -1556,7 +1576,12 @@ textarea {
 #contact-form textarea:focus {
     border: 1px solid #ea1825;
 }
-
+#submit_btn {
+    padding: 20px;
+    background-color: #D73A33;
+    color: #fff;
+    border-radius: 5px;
+}
 /* -------------- */
 
 
@@ -1593,7 +1618,22 @@ textarea {
     color: #fff;
     left: 3%;
 }
-
+#heading-slider .swiper-button-next,
+#heading-slider .swiper-button-prev {
+    top: unset;
+    bottom: 5%;
+}
+#heading-slider .swiper-button-prev {
+    left: 175px;
+}
+#heading-slider .swiper-button-next {
+    left: 240px;
+}
+#heading-slider .swiper-button-next:after, 
+#heading-slider .swiper-button-prev:after {
+    color: #fff;
+    font-size: 25px;
+}
 
 #heading-slider svg {
     --progress: 0;
@@ -2169,9 +2209,6 @@ textarea {
     .recipe-desc {
         padding: 30px 30px 20px;
     }
-    .card-top {
-        height: 150px;
-    }
     .card-top img {
         width: 90% !important
         ;
@@ -2252,12 +2289,6 @@ textarea {
     }
     header.fixed #own_cabinet{
         border-color: #000;
-    }
-    header.fixed #own_cabinet:hover a{
-        color: #000;
-    }
-    header.fixed #own_cabinet:hover img {
-        filter: none;
     }
     #static {
         background-color: #F4F4F4;

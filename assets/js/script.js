@@ -54,10 +54,10 @@ $(document).ready(function () {
         spaceBetween: 30,
         loop: true,
         effect: "fade",
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -100,8 +100,8 @@ $(document).ready(function () {
         loop:true,
         margin:10,
         nav:true,   
+        stagePadding: 40,
         navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
-        // navContainer:".recipe-nav",
         responsive:{
             0:{
                 items:1
@@ -203,6 +203,13 @@ $(document).ready(function () {
         arrows:false,
         // centerPadding:"2%"
       });
-    
+      
+    $("#recipes .owl-prev-layout").click(()=>{
+        $("#recipes .owl-carousel .owl-nav button.owl-prev").click()
+    })
+    $("#recipes .owl-next-layout").click(()=>{
+        $("#recipes .owl-carousel .owl-nav button.owl-next").click()
+    })
+    // $(".detail").remove()
 })
 
