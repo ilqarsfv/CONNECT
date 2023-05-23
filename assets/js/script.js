@@ -18,35 +18,35 @@ $(document).ready(function () {
     });
 
     // tariflerdeki inputun deyeri deyisdikce oxlarin itmesi ve deyerlerin deyismesi
-    const rangeSliders = $(".styled-slider");
-    const cards = $(".cards .card");
+    // const rangeSliders = $(".styled-slider");
+    // const cards = $(".cards .card");
 
-    cards.each(function (i, card) {
-        const currentMb = $(card).find(".recipes-mb");
-        const currentPrice = $(card).find(".recipe-price");
-        const dataNum = $(card).find(".range-lines span[data-num]");
-        currentMb.text(rangeSliders.eq(i).val());
-        currentPrice.text(dataNum.eq(0).attr("data-price"));
-    });
-    rangeSliders.on("input", function () {
-        const rangeSlider = $(this);
-        const rangeVal = rangeSlider.val();
-        const card = rangeSlider.closest(".card");
-        const dataNum = card.find(".range-lines span[data-num='" + rangeVal + "']");
-        const dataNums = card.find(".range-lines span");
-        const currentMb = card.find(".recipes-mb");
-        const currentPrice = card.find(".recipe-price");
-        currentMb.text(rangeVal);
-        currentPrice.text(dataNum.attr("data-price"));
-        for (let i = 0; i < dataNums.length; i++) {
-            if (i < rangeVal / 4 - 1) {
-                dataNums.eq(i).css({ opacity: 0 });
-            }
-            else {
-                dataNums.eq(i).css({ opacity: 1 });
-            }
-        }
-    });
+    // cards.each(function (i, card) {
+    //     const currentMb = $(card).find(".recipes-mb");
+    //     const currentPrice = $(card).find(".recipe-price");
+    //     const dataNum = $(card).find(".range-lines span[data-num]");
+    //     currentMb.text(rangeSliders.eq(i).val());
+    //     currentPrice.text(dataNum.eq(0).attr("data-price"));
+    // });
+    // rangeSliders.on("input", function () {
+    //     const rangeSlider = $(this);
+    //     const rangeVal = rangeSlider.val();
+    //     const card = rangeSlider.closest(".card");
+    //     const dataNum = card.find(".range-lines span[data-num='" + rangeVal + "']");
+    //     const dataNums = card.find(".range-lines span");
+    //     const currentMb = card.find(".recipes-mb");
+    //     const currentPrice = card.find(".recipe-price");
+    //     currentMb.text(rangeVal);
+    //     currentPrice.text(dataNum.attr("data-price"));
+    //     for (let i = 0; i < dataNums.length; i++) {
+    //         if (i < rangeVal / 4 - 1) {
+    //             dataNums.eq(i).css({ opacity: 0 });
+    //         }
+    //         else {
+    //             dataNums.eq(i).css({ opacity: 1 });
+    //         }
+    //     }
+    // });
     // --------------------------------------------
 
     const progressCircle = document.querySelector("#heading-slider svg");
@@ -54,10 +54,10 @@ $(document).ready(function () {
         spaceBetween: 30,
         loop: true,
         effect: "fade",
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -99,7 +99,8 @@ $(document).ready(function () {
     $('.cards .cards-owl-1').owlCarousel({
         loop:true,
         margin:10,
-        nav:true,
+        nav:true,   
+        navContainer:".recipe-nav",
         responsive:{
             0:{
                 items:1
@@ -195,5 +196,12 @@ $(document).ready(function () {
         asNavFor: ".services_nav",
     });
 
+    $('.some-products-items').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false,
+        // centerPadding:"2%"
+      });
+    
 })
 
