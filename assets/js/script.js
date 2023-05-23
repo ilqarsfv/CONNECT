@@ -100,7 +100,8 @@ $(document).ready(function () {
         loop:true,
         margin:10,
         nav:true,   
-        navContainer:".recipe-nav",
+        navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+        // navContainer:".recipe-nav",
         responsive:{
             0:{
                 items:1
